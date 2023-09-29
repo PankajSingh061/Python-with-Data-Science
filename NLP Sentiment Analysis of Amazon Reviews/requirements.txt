@@ -1,0 +1,8 @@
+numpy
+pandas
+nltk
+NLP
+textblob
+matplotlib
+seaborn
+words

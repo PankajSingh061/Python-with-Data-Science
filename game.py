@@ -26,13 +26,13 @@ def draw():
 
 def player_update():
     if keyboard.left:
-        p.x-=5
+        p.x-=10
     elif keyboard.right:
-        p.x += 5
+        p.x += 10
     elif keyboard.up:
-        p.y -= 5
+        p.y -= 10
     elif keyboard.down:
-        p.y += 5
+        p.y += 10
 
 def enemy_update():
     if c.x>e.x:
@@ -59,9 +59,9 @@ def score_update():
         c.x=randint(0,WIDTH)
         c.y=randint(0,HEIGHT)
         sounds.action.play()
-    if score<=-50:
+    if score<=-60:
         game_state=1 #game over
-    if score>=50:
+    if score>=60:
         game_state =2#win
 
 
